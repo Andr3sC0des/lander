@@ -1,0 +1,70 @@
+---
+import ReviewCard from "./ReviewCard.astro";
+
+
+---
+
+<section class="reviews">
+  <h2 class="title">Loved By Developers</h2>
+  <p class="description">Join 20,000+ Devs Building with Railway on Discord</p>
+  <article class="cards">
+    <ReviewCard />
+    <ReviewCard />
+    <ReviewCard />
+    <ReviewCard />
+    <ReviewCard />
+    <ReviewCard />
+  </article>
+</section>
+
+
+<style>
+  .reviews {
+    margin: 10rem 0;
+  }
+  .title {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .description {
+    color: rgb(161, 160, 171);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 1080px) {
+    .title {
+      font-size: 48px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .description {
+      font-size: 18px;
+      max-width: 90%;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+    }
+
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    place-content: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 1080px) {
+    .cards{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 1000px) {
+    .cards{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

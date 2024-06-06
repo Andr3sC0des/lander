@@ -1,0 +1,32 @@
+---
+import PricingCard from "./PricingCard.astro";
+
+
+---
+
+<section class="pricing">
+  <h2 class="title">Pricing</h2>
+  <article class="prices">
+    <PricingCard />
+    <PricingCard />
+    <PricingCard />
+  </article>
+</section>
+
+<style>
+  .pricing {
+    margin: 10rem 0;
+  }
+  .title {
+    font-size: 64px;
+    text-align: center;
+  }
+  .prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+</style>

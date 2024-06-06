@@ -1,0 +1,29 @@
+---
+import User from "./User.astro";
+
+
+
+---
+
+<article class="card">
+  <User />
+  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit tenetur ipsam aspernatur modi! Iste alias necessitatibus mollitia adipisci?</p>
+</article>
+
+<style>
+  .card {
+    border: 1px solid #ffffff2d;
+    border-radius: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  .description{
+    margin-top: 1rem;
+  }
+  @media (max-width: 1080px) {
+    .card{
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+</style>

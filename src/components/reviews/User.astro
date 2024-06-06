@@ -1,0 +1,35 @@
+---
+
+const { title="Complete Name", user="@username", avatar="https://unavatar.io/github/example" } = Astro.props
+---
+
+<div class="user">
+  <div>
+    <img class="avatar" src={avatar} alt="">
+  </div>
+  <aside>
+    <span class="name">{title}</span>
+    <span class="username">{user}</span>
+  </aside>
+</div>
+
+<style>
+  .user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .name {
+    color: #fff;
+    display: block;
+  }
+  .username {
+    display: block;
+    color: rgb(161, 160, 171);
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+  }
+</style>

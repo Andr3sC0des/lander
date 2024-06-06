@@ -1,0 +1,70 @@
+---
+
+---
+
+<section class="data">
+  <article class="card">
+    <span class="title">ACTIVE USERS</span>
+    <span class="value">1M+</span>
+  </article>
+  <article class="card center-card">
+    <span class="title">LANDINGS CREATED</span>
+    <span class="value">150M+</span>
+  </article>
+  <artic class="card">
+    <span class="title">REVIEWS</span>
+    <span class="value">40k</span>
+  </article>
+</section>
+
+<style>
+  .data{
+    width: 1000px;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    background: #262626;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    min-width: 340px;
+  }
+  .title {
+    color: var(--gray-color);
+    font-size: 1.2rem;
+  }
+  .value {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .center-card{
+    border-left: 2px solid #ffffff1f;
+    border-right: 2px solid #ffffff1f;
+  }
+
+  @media (max-width: 1080px) {
+    .data{  
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+    .center-card{
+      border-left: none;
+      border-top: 2px solid #ffffff1f;
+      border-bottom: 2px solid #ffffff1f;
+      border-right: none;
+    }
+
+</style>

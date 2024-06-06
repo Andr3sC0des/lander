@@ -1,0 +1,80 @@
+---
+import CheckIcon from "@/Icons/CheckIcon.astro";
+---
+
+<div class="card">
+  <header class="header">
+    <h2 class="title">Hobby</h2>
+    <p class="description">For hobbyist developers looking to showcase their side projects.</p>
+  </header>
+  <main class="content">
+    <ul class="list">
+      <li class="item"><CheckIcon/> Includes $5 of usage monthly</li>
+      <li class="item"><CheckIcon/> 8 GB RAM / 8 vCPU per service</li>
+      <li class="item"><CheckIcon/> Project permissions</li>
+      <li class="item"><CheckIcon/> Community support</li>
+      <li class="item"><CheckIcon/> 7 day log history</li>
+      <li class="item"><CheckIcon/> US-West region</li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <button class="btn">Sign Up for Virtual Axis</button>
+  </footer>
+</div>
+
+<style>
+  .card {
+    padding: 1rem;
+    width: 300px;
+    max-height: 500px;
+    border-radius: 1rem;
+    border: 2px solid var(--brand-color);
+    background: #131313;
+    backdrop-filter: blur(24px);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+    padding: 1rem 0rem;
+  }
+  .footer {
+    height: fit-content;
+    margin-top: 1rem;
+  }
+  .title {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .description{
+    color: rgb(186, 207, 247);
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
+  }
+  .btn {
+    background: var(--brand-color);
+    border: none;
+    color: #000;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .btn:hover {
+    scale: 1.02;
+  }
+  .list {
+    margin-top: 1rem;
+  }
+  .item {
+    line-height: 2;
+    color: rgb(186, 207, 247);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>
