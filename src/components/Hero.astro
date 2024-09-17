@@ -1,8 +1,23 @@
 ---
-
+import "animated-css/src/animations/parallax.css";
+import "animated-css/src/animations/fadeIn.css";
+import "animated-css/src/animations/slideIn.css";
+import "animated-css/src/animations/rotate3D.css";
+import "animated-css/src/animations/floating.css";
 ---
+
 <section class="hero">
-  <h1 animation="fadeIn" cycle="ease-in" duration="2s" class="title">A BEAUTIFUL DESIGN</h1>
+  <!-- <h1 data-acss="viewport fadeIn" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="viewport fadeIn repeat" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="viewport repeat custom 1s" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="click custom 2s" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="mousemove hover scaleUp" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <h1 data-acss="mousemove hover parallax" class="title">A BEAUTIFUL DESIGN</h1>
+  <!-- <h1 class="title" data-acss="floating forever + viewport repeat slideIn 1s + hover mousemove parallax">Animated CSS</h1> -->
+  <!-- <h1 class="title" data-acss="viewport slideIn 1s">Animated CSS</h1> -->
+  <!-- <h1 data-acss="mousemove hover parallax" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="forever floating 2s" class="title">A BEAUTIFUL DESIGN</h1> -->
+  <!-- <h1 data-acss="blink hover 1s" class="title">A BEAUTIFUL DESIGN</h1> -->
   <h2 class="subtitle">LANDING PAGE</h2>
   <p class="description">Get started with your business.</p>
   <div class="buttons">
@@ -12,11 +27,12 @@
 </section>
 
 <script>
-  import '../lib/GetAllAnimatedElements.js'
+  import init from 'animated-css'
+  init();
 </script>
 
 <style>
-  .hero{
+  .hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +49,7 @@
     font-weight: 900;
     margin-top: 3rem;
     drop-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
+  }
   @media (max-width: 1080px) {
     .subtitle {
       font-size: 48px;
@@ -48,13 +64,13 @@
     margin-top: 1rem;
     color: var(--secundary-color);
   }
-  .btn{
+  .btn {
     padding: 1rem 2rem;
     color: #000;
     border: none;
     font-size: 20px;
     border-radius: 0.5rem;
-    background: var(--brand-color);   
+    background: var(--brand-color);
   }
   .btn-2 {
     color: var(--main-color);

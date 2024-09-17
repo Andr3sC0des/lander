@@ -3,7 +3,7 @@
 ---
 
 <section class="data">
-  <article class="card">
+  <article class="card left-card">
     <span class="title">ACTIVE USERS</span>
     <span class="value">1M+</span>
   </article>
@@ -11,7 +11,7 @@
     <span class="title">LANDINGS CREATED</span>
     <span class="value">150M+</span>
   </article>
-  <artic class="card">
+  <article class="card right-card">
     <span class="title">REVIEWS</span>
     <span class="value">40k</span>
   </article>
@@ -25,6 +25,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     overflow: hidden;
     border-radius: 2rem;
+  }
+  .left-card {
+    border-right: 2px solid #ffffff1f;
+  }
+  .right-card {
+    border-left: 2px solid #ffffff1f;
   }
   .card {
     display: flex;

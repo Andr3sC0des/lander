@@ -2,7 +2,7 @@
 dist/
 TODO.md
 pnpm-lock.yaml
-designs/
+designs
 # generated types
 .astro/
 
